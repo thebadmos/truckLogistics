@@ -1594,6 +1594,11 @@ li {
   display: block;
   margin-top: 7px;
 }
+@media (min-width: 768px){
+.col-sm-3 {
+    width: 20%;
+}
+}
 .single-team-member .content .name-box h3 {
   font-family: 'Open Sans', sans-serif;
   color: #313131;
@@ -3455,6 +3460,10 @@ li {
 .welcome-services.home-one {
   margin-top: 0px;
   padding-top: 80px;
+  background: #E3E8EC;
+}
+.welcome-services.home-two {
+  margin-top: 0px;
   background: #E3E8EC;
 }
 .welcome-services.home-one .sec-title {
