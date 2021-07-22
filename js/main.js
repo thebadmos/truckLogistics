@@ -1,26 +1,3 @@
-/***************************************************************************************************************
-||||||||||||||||||||||||||||         CUSTOM SCRIPT FOR LOGIS CARGO          ||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************
-||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************
-****************************************************************************************************************
-1. revolution slider
-2. accrodion
-3. gallery fancybox activator 
-4. select menu
-5. client carousel
-6. counter number changer
-7. google map
-8. contact form validation
-9. sticky header
-10. gallery
-11. typed plugin
-12. Mobile Navigation
-13. testimonails carousel
-****************************************************************************************************************
-||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************/
-
 
 "use strict"; // Start of use strict
 
@@ -119,75 +96,76 @@ function CounterNumberChanger () {
 	}
 }
 // 7. google map
-function gMap () {
-	if ($('.google-map').length) {
-        $('.google-map').each(function () {
-        	// getting options from html 
-        	var mapName = $(this).attr('id');
-        	var mapLat = $(this).data('map-lat');
-        	var mapLng = $(this).data('map-lng');
-        	var iconPath = $(this).data('icon-path');
-        	var mapZoom = $(this).data('map-zoom');
-        	var mapTitle = $(this).data('map-title');
+// function gMap () {
+// 	if ($('.google-map').length) {
+//         $('.google-map').each(function () {
+//         	// getting options from html 
+//         	var mapName = $(this).attr('id');
+//         	var mapLat = $(this).data('map-lat');
+//         	var mapLng = $(this).data('map-lng');
+//         	var iconPath = $(this).data('icon-path');
+//         	var mapZoom = $(this).data('map-zoom');
+//         	var mapTitle = $(this).data('map-title');
 
-        	// if zoom not defined the zoom value will be 15;
-        	if (!mapZoom) {
-        		var mapZoom = 15;
-        	};
-        	// init map
-        	var map;
-            map = new GMaps({
-                div: '#'+mapName,
-                scrollwheel: false,
-                lat: mapLat,
-                lng: mapLng,
-                zoom: mapZoom
-            });
-            // if icon path setted then show marker
-            if(iconPath) {
-        		map.addMarker({
-	            	icon: iconPath,
-	                lat: mapLat,
-	                lng: mapLng,
-	                title: mapTitle
-	            });
-        	}
-        });  
-	};
-}
+//         	// if zoom not defined the zoom value will be 15;
+//         	if (!mapZoom) {
+//         		var mapZoom = 15;
+//         	};
+//         	// init map
+//         	var map;
+//             map = new GMaps({
+//                 div: '#'+mapName,
+//                 scrollwheel: false,
+//                 lat: mapLat,
+//                 lng: mapLng,
+//                 zoom: mapZoom
+//             });
+//             // if icon path setted then show marker
+//             if(iconPath) {
+//         		map.addMarker({
+// 	            	icon: iconPath,
+// 	                lat: mapLat,
+// 	                lng: mapLng,
+// 	                title: mapTitle
+// 	            });
+//         	}
+//         });  
+// 	};
+// }
 // 8. contact form validation
-function contactFormValidation () {
+// function contactFormValidation () {
 
-	if($('.contact-form').length){
-		$('.contact-form').validate({ // initialize the plugin
-			rules: {
-				name: {
-					required: true
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				message: {
-					required: true
-				},
-				subject: {
-					required: true
-				}
-			},
-			submitHandler: function (form) { 
-				// sending value with ajax request
-				$.post($(form).attr('action'), $(form).serialize(), function (response) {
-					$(form).parent('div').append(response);
-					$(form).find('input[type="text"]').val('');
-					$(form).find('input[type="email"]').val('');
-					$(form).find('textarea').val('');
-				});
-				return false;
-			}
-		});
-	}
-}
+// 	if($('#bookingForm').length){
+// 		$('#bookingForm').validate({ // initialize the plugin
+// 			rules: {
+// 				name: {
+// 					required: true
+// 				},
+// 				email: {
+// 					required: true,
+// 					email: true
+// 				},
+// 				comment: {
+// 					required: true
+// 				},
+// 				phone: {
+// 					required: true
+// 				}
+// 			},
+// 			submitHandler: function (form) { 
+// 				// sending value with ajax request
+// 				$.post($(form).attr('action'), $(form).serialize(), function (response) {
+// 					$(form).parent('div').append(response);
+// 					$(form).find('input[type="text"]').val('');
+// 					$(form).find('input[type="email"]').val('');
+// 					$(form).find('input[type="number"]').val('');
+// 					$(form).find('textarea').val('');
+// 				});
+// 				return false;
+// 			}
+// 		});
+// 	}
+// }
 // 9. sticky header
 function stickyHeader () {
 	if ($('.stricky').length) {
@@ -280,8 +258,8 @@ jQuery(document).on('ready', function () {
 		accrodion();
 		selectMenu();		
 		CounterNumberChanger();
-		contactFormValidation();
-		gMap();
+		// contactFormValidation();
+		// gMap();
 		fleetGallery();
 		GalleryFancyboxActivator();
 		typed();

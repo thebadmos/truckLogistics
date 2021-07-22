@@ -60,15 +60,12 @@ li {
   outline: none;
   background: #F7BE3D;
   font-size: 14px;
-  line-height: 28px;
   color: #202020;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  padding: 10px 0px;
-  padding-left: 20px;
-  padding-right: 15px;
-  display: inline-block;
+  font-family:'Courier New';
+  font-weight: 200;
+   margin-top: 2em;
+   padding: .8em;
   border-radius: 3px;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
@@ -155,6 +152,14 @@ li {
   margin-top: -9px;
 }
 .sec-title h2:after {
+  content: '';
+  width: 55px;
+  height: 3px;
+  background: #F7BE3D;
+  display: block;
+  margin-top: 13px;
+}
+.sec-title h4:after {
   content: '';
   width: 55px;
   height: 3px;
@@ -347,7 +352,11 @@ li {
   color: #757575;
   margin-right: 15px;
 }
-
+.alert {
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 15px;
+}
 
 /* ==============================
   5. Top Bar styles
@@ -1223,7 +1232,7 @@ li {
   padding-left: 45px;
 }
 .featured-services.style-two .single-featured-service .title-box h3 span {
-  color: #fff;
+  color: #0e0e0e;
 }
 .featured-services.style-two .single-featured-service .icon-box {
   color: #1FB5C7;
@@ -1265,7 +1274,7 @@ li {
   color: #000000;
   margin: 0;
 }
-.single-featured-service .title-box h3:after {
+/* .single-featured-service .title-box h3:after {
   content: '';
   background: #F6BA18;
   width: 45px;
@@ -1273,7 +1282,7 @@ li {
   display: block;
   vertical-align: top;
   margin-top: 10px;
-}
+} */
 .single-featured-service .title-box h3 span {
   display: block;
   color: #323232;
@@ -1402,10 +1411,10 @@ li {
   border-color: #1FB5C7;
   box-shadow: 0 0 7px #1FB5C7;
 }
-.contact-form input.error {
+/* .contact-form input.error {
   border-color: rgba(255, 0, 0, 0.5);
   box-shadow: 0 0 7px rgba(255, 0, 0, 0.5);
-}
+} */
 .contact-form input::-webkit-input-placeholder {
   /* Safari, Chrome and Opera */
   color: #898989;
@@ -1442,10 +1451,10 @@ li {
   border-color: #1FB5C7;
   box-shadow: 0 0 7px #1FB5C7;
 }
-.contact-form textarea.error {
+/* .contact-form textarea.error {
   border-color: rgba(255, 0, 0, 0.5);
   box-shadow: 0 0 7px rgba(255, 0, 0, 0.5);
-}
+} */
 .contact-form textarea::-webkit-input-placeholder {
   /* Safari, Chrome and Opera */
   color: #898989;
@@ -2133,10 +2142,10 @@ li {
   background: #ffffff url(../images/contact-page-bg.png) top right no-repeat;
 }
 .rqa-feature .bg-1 {
-  background: #13314C;
+  background: #145A77;
 }
 .rqa-feature .bg-2 {
-  background: #145A77;
+  background: #fff;
 }
 .rqa-feature .bg-3 {
   background: #1D6B8B;
@@ -2188,6 +2197,8 @@ li {
 .single-sidebar-widget .sec-title h2 span {
   font-size: 20px;
 }
+
+
 .single-sidebar-widget .sec-title h2:after {
   width: 35px;
 }
@@ -3316,7 +3327,7 @@ li {
 
 
 .request-qoute.has-overlay {
-  background: url(../images/rqa-bg.jpg) 0 0 no-repeat fixed;
+  /* background: url(../images/rqa-bg.jpg) 0 0 no-repeat fixed; */
   -webkit-background-size: cover;
   background-size: cover;
   position: relative; 
@@ -3336,6 +3347,9 @@ li {
   position: relative;
 }
 .request-qoute.has-overlay .sec-title h2 span {
+  color: #fff;
+}
+.request-qoute.has-overlay .sec-title h4 span {
   color: #fff;
 }
 .request-qoute.has-overlay .has-overlay {
@@ -3372,8 +3386,9 @@ li {
   background: rgba(0,0,0,.4);
 }
 .request-qoute.has-overlay .testimonial-box .content-box .title h3,
-.request-qoute.has-overlay .testimonial-box .content p {
-  color: #fff;
+.request-qoute.has-overlay .testimonial-box .content h3 {
+  color: gray;
+  text-transform: uppercase;
 }
 .request-qoute.has-overlay .contact-form input,
 .request-qoute.has-overlay .contact-form textarea {
@@ -3444,7 +3459,7 @@ li {
 ======================================= */
 
 .featured-services.style-two {
-    background: #183650;
+    background: #e3e8ec;
 }
 .featured-services.style-two .featured-service-box {
   padding-bottom: 38px;
