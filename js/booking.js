@@ -27,6 +27,9 @@ function submitForm(e){
      var phone = getInputVal('phone');
      var email = getInputVal('email');
      var comment = getInputVal('comment');
+    //  var investTrucks = getInputVal('investTrucks');
+    //  var dedicateTrucks = getInputVal('dedicateTrucks');
+    //  var partnerInvest = getInputVal('partnerInvest');
       
      //save message
      saveMessage(name,phone,email,comment);
@@ -57,6 +60,7 @@ function getInputVal(id){
          name: name,
          phone: phone,
          email: email,
-         comment: comment
+         comment: comment,
+       
 });
  }
