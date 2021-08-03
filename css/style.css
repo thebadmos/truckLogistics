@@ -1038,11 +1038,16 @@ li {
   text-transform: uppercase;
   color: #F7BE3D;
 }
-.thm-banner-wrapper .caption-p {
+.thm-banner-wrapper .caption-p, .caption-pTech {
   font-size: 20px;
   font-style: italic;
   color: #fff;
   line-height: 28px;
+}
+.thm-banner-wrapper .caption-pTech{
+  color: #010101;
+  font-size: 2em; 
+  margin-top: 3em;
 }
 .thm-banner-wrapper .caption-divider span.divider {
   width: 1px;
@@ -1208,7 +1213,7 @@ li {
 .welcome-single-services .text-box p {
   color: #898989;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   -webkit-transition: all .5s ease;
           transition: all .5s ease;
@@ -1376,7 +1381,21 @@ li {
 .request-qoute.service-page {
   background-color: #fff;
 }
+.team-section .content p{
+  color: #898989;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  line-height: 24px;
+}
 
+.request-qoute.has-overlay .content h2{
+  color: #898989;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease;
+}
 /* ==============================
   15. Contact From styles
 ============================== */
@@ -3302,6 +3321,7 @@ li {
 .text-rotator-banner .caption-p {
   margin-bottom: 30px;
   margin-right: 2em;
+  margin-top: 10px;
 }
 .text-rotator-banner .type-wrap {
   display: inline-block;
@@ -3355,15 +3375,13 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #081C34;
+  /* background: #081C34; */
   opacity: .75;
 }
 .request-qoute.has-overlay .container {
   position: relative;
 }
-.request-qoute.has-overlay .sec-title h2 span {
-  color: #fff;
-}
+
 .request-qoute.has-overlay .sec-title h4 span {
   color: #fff;
 }
