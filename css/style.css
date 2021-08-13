@@ -203,7 +203,74 @@ li {
 /* ==============================
   3. Caption Effect styles
 ============================== */
+.iconBox i{
+  color: #13314c;
+}
+.iconBox h5{
+ margin-top: 1em;
+ font-size:1.5em
+  
+}
+/* .table{
+  background-color: 
+  #bb8;
+} */
+/*adv*/
 
+.adv .section-title h2::after {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.adv .icon-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.adv .icon-box:hover {
+  transform: scale(1.08);
+}
+
+.adv .icon {
+  margin-bottom: 15px;
+}
+
+.adv .icon i {
+  font-size: 32px;
+  line-height: 1;
+  color: #e78e36;
+  background: #eff2f8;
+  padding: 20px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.adv .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.adv .title a {
+  color: #2d405f;
+  transition: 0.3s;
+}
+
+.adv .title a:hover {
+  color: #4e6fa4;
+}
+
+.adv .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: rgb(137, 137, 137);
+}
 
 .img-cap-effect:hover .img-box .img-caption {
   top: 0;
@@ -401,6 +468,7 @@ li {
 #top-bar .top-contact-info li i.fa-envelope {
   font-size: 17px;
 }
+/*Advantages*/
 
 /* ==============================
   6. header styles
@@ -1245,9 +1313,12 @@ li {
   top: 0;
   left: 0;
   background: #183650;
+
+  
 }
 .featured-services.style-two .single-featured-service {
   padding-left: 45px;
+
 }
 .featured-services.style-two .single-featured-service .title-box h3 span {
   color: #0e0e0e;
@@ -1256,7 +1327,7 @@ li {
   color: #1FB5C7;
 }
 .featured-services.style-two .single-featured-service .icon-box i:before {
-  color: #1FB5C7; 
+  color: #13314c;
 }
 .featured-services.style-two .single-featured-service p {
   color: #ABC3D8;
@@ -3514,8 +3585,9 @@ li {
   margin-top: 0px;
   background: #E3E8EC;
 }
+
 .welcome-services.home-one .sec-title {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .welcome-services.home-one .welcome-single-services .text-box,
 .welcome-services.home-one .welcome-single-services .text-box:before {
