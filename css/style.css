@@ -182,7 +182,7 @@ li {
   font-weight: bold;
   color: #323232;
   text-transform: uppercase;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 .sec-title p {
   color: #898989;
@@ -229,7 +229,7 @@ li {
   transition: all 0.3s;
   border-radius: 5px;
   text-align: center;
-  margin-top: 2em;
+
 }
 
 .adv .icon-box:hover {
@@ -1286,6 +1286,8 @@ li {
   -webkit-transition: all .5s ease;
           transition: all .5s ease;
 }
+
+
 
 
 /* ==============================
@@ -3368,6 +3370,24 @@ li {
 /* ==============================
   38. Text Slider styles
 =========================== */
+
+@media (max-width: 991px) {
+  .hero-img {
+   text-align: center;
+ }
+ #hero .hero-img img {
+   width: 50%;
+ }
+ 
+}
+@media (max-width: 768px) {
+  #hero .hero-img img {
+    width: 100%;
+  }
+
+  
+}
+
 
 .text-rotator-banner {
   background-size: cover;
