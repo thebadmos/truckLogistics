@@ -64,7 +64,7 @@ li {
   text-transform: uppercase;
   font-family:'Courier New';
   font-weight: 200;
-   margin-top: 2em;
+   margin-bottom: 2em;
    padding: .8em;
   border-radius: 3px;
   -webkit-transition: all 0.5s ease;
@@ -1022,7 +1022,7 @@ li {
   width: 100%;
   z-index: 9999;
   padding: 0 40px;
-  /* background-color: #13314C; */
+ background-color: #13314C;
 }
 #header2.stricky-fixed {
   background: #13314C;
@@ -1108,10 +1108,11 @@ li {
   color: #F7BE3D;
 }
 .thm-banner-wrapper .caption-p, .caption-pTech {
-  font-size: 23px;
+  font-size: 25px;
   font-style: italic;
-  color: #0e0e0e;
+  color: #fff;
   line-height: 28px;
+  font-weight: 900;
 }
 .thm-banner-wrapper .caption-pTech{
   color: #010101;
@@ -3385,6 +3386,10 @@ li {
   #hero .hero-img img {
     width: 100%;
   }
+  .caption-wrapper img{
+    margin-top: -15em;
+  }
+ 
 
   
 }
@@ -3394,6 +3399,8 @@ li {
   background-size: cover;
   background-position: center center;
   height: 100vh;
+  background-color: #0B3C54;
+
 }
 .text-rotator-banner.style-two .caption-wrapper {
   margin-top: 80px;
@@ -3411,9 +3418,10 @@ li {
   margin-bottom: 20px;
 }
 .text-rotator-banner .caption-p {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   margin-right: 2em;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+
 }
 .text-rotator-banner .type-wrap {
   display: inline-block;
