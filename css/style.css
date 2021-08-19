@@ -46,6 +46,7 @@ li {
 .pl-30 {
   padding-left: 30px;
 }
+
 .pt0 {
   padding-top: 0 !important;
 }
@@ -1094,11 +1095,17 @@ li {
   border: none;
   padding: 0 14px;
 }
+.clip{
+  overflow-x: hidden;
+    /* display: inline-block;
+    clip-path: circle(130% 59% at 50% 40%); */
+  }
+
+ 
 
 /* ==============================
   10. Banner styles
 ============================== */
-
 
 .thm-banner-wrapper .caption-h1 {
   font-size: 50px;
@@ -1108,7 +1115,7 @@ li {
   color: #F7BE3D;
 }
 .thm-banner-wrapper .caption-p, .caption-pTech {
-  font-size: 25px;
+  font-size: 10px;
   font-style: italic;
   color: #fff;
   line-height: 28px;
@@ -1117,7 +1124,7 @@ li {
 .thm-banner-wrapper .caption-pTech{
   color: #010101;
   font-size: 2em; 
-  margin-top: 3em;
+  margin-top: 5em;
 }
 .thm-banner-wrapper .caption-divider span.divider {
   width: 1px;
@@ -3389,12 +3396,11 @@ li {
   .caption-wrapper img{
     margin-top: -15em;
   }
- 
+ }
 
-  
-}
-
-
+ #techStyle{
+  clip-path: circle(100% at 50% -40%);
+ }
 .text-rotator-banner {
   background-size: cover;
   background-position: center center;
