@@ -146,6 +146,39 @@ li {
 .sec-padding.page-title {
   padding-bottom: 30px;
 }
+#top{
+  margin-bottom: 30px;
+}
+.top h2:after {
+  content: '';
+  width: 55px;
+  height: 3px;
+  background: #F7BE3D;
+  display: block;
+  margin-top: 13px;
+}
+.top h4:after {
+  content: '';
+  width: 55px;
+  height: 3px;
+  background: #F7BE3D;
+  display: block;
+  margin-top: 13px;
+}
+.top h2 span {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  color: #323232;
+  text-transform: uppercase;
+
+}
+.top p {
+  color: #898989;
+  margin: 0;
+  margin-top: 20px;
+}
+
 .sec-title {
   margin-bottom: 50px;
 }
@@ -1095,13 +1128,18 @@ li {
   border: none;
   padding: 0 14px;
 }
-.clip{
+.clip #myVideo  {
   overflow-x: hidden;
+  object-fit: cover;
+  height:559px;
+  width: 1399px !important
     /* display: inline-block;
     clip-path: circle(130% 59% at 50% 40%); */
   }
-
- 
+  
+  #myVideo{
+    object-fit: fill;
+  }
 
 /* ==============================
   10. Banner styles
@@ -1115,16 +1153,18 @@ li {
   color: #F7BE3D;
 }
 .thm-banner-wrapper .caption-p, .caption-pTech {
-  font-size: 10px;
+  font-size: 20px;
   font-style: italic;
   color: #fff;
   line-height: 28px;
-  font-weight: 900;
+  /* font-weight:500 */
 }
 .thm-banner-wrapper .caption-pTech{
-  color: #010101;
+  /* color: #13314C; */
+  color: #0e0e0e;
   font-size: 2em; 
-  margin-top: 5em;
+  margin-top: 3em;
+  
 }
 .thm-banner-wrapper .caption-divider span.divider {
   width: 1px;
@@ -3398,9 +3438,9 @@ li {
   }
  }
 
- #techStyle{
+ /* #techStyle{
   clip-path: circle(100% at 50% -40%);
- }
+ } */
 .text-rotator-banner {
   background-size: cover;
   background-position: center center;
