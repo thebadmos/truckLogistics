@@ -1173,7 +1173,8 @@ li {
   /* color: #13314C; */
   color: #0e0e0e;
   font-size: 2em; 
-  margin-top: 3em;
+  margin-top: 2.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
 .thm-banner-wrapper .caption-divider span.divider {
@@ -3448,9 +3449,9 @@ li {
   }
  }
 
- /* #techStyle{
-  clip-path: circle(100% at 50% -40%);
- } */
+ #techStyle{
+  height:559px;
+ }
 .text-rotator-banner {
   background-size: cover;
   background-position: center center;
