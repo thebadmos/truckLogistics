@@ -1130,7 +1130,6 @@ li {
 }
 .clip #myVideo  {
   overflow-x: hidden;
-  object-fit: cover;
   height:559px;
   width: 1399px !important
     /* display: inline-block;
@@ -1139,6 +1138,7 @@ li {
   
   #myVideo{
     object-fit: fill;
+    overflow-x: hidden;
   }
 
 /* ==============================
