@@ -1135,11 +1135,12 @@ li {
     /* display: inline-block;
     clip-path: circle(130% 59% at 50% 40%); */
   }
-  
+
   #myVideo{
     object-fit: fill;
     overflow-x: hidden;
   }
+
 
 /* ==============================
   10. Banner styles
