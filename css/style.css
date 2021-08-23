@@ -1141,6 +1141,15 @@ li {
     overflow-x: hidden;
   }
 
+  /* Portrait and Landscape */
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .clip #myVideo  {
+      overflow-x: hidden;
+      height:559px;
+      width: 599px !important
+    }
+    }
+  
 
 /* ==============================
   10. Banner styles
