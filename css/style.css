@@ -3690,54 +3690,22 @@ li {
   -webkit-clip-path: none;
   clip-path: none;
 }
+/*Whatsapp style*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
 
-/* ==============================================
-  42. Testimonials box with carousel styles
-================================================= */
-
-.testimonial-box.with-carousel .owl-theme .owl-dots .owl-dot span {
-  border: 2px solid #1FB5C7;
-  background-color: transparent;
-  width: 15px;
-  height: 15px;
+.my-float{
+	margin-top:16px;
 }
-.testimonial-box.with-carousel .owl-theme .owl-dots .owl-dot.active span, .testimonial-box.with-carousel .owl-theme .owl-dots .owl-dot:hover span {
-  border: 2px solid #FBB12F;
-  background-color: transparent;
-  
-  /*background: #FBB12F;*/
-}
-.testimonial-box.with-carousel .item {padding-bottom: 75px;}
-
-
-/* ==============================================
-  43. Track Your shipment styles
-================================================= */
-
-.track-shipment-form > ul > li {
-  margin-bottom: 30px;
-}
-.track-shipment-form > ul > li:last-child {margin-bottom: 0;}
-.track-shipment-form ul li .label,
-.track-shipment-form ul li .content {
-  float: left;
-}
-.track-shipment-form ul li .label {
-  font-size: 14px;
-  font-weight: normal;
-  color: #242424;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  width: 175px;
-  line-height: 47px;
-}
-.track-shipment-form ul li .content {
-  width: calc( 80% - 175px);
-  padding-left: 30px;
-}
-.track-shipment-form ul li .content input[type="radio"] {width: 15px;height: 15px; -webkit-box-shadow: none !important;
-box-shadow: none !important; margin-right: 7px;position: relative;top: 3px;margin-bottom: 0;}
-.track-shipment-form ul.radio-box li {line-height: 43px;}
-.track-shipment-form .thm-btn {padding-top: 5px;padding-bottom: 5px;}
-.track-shipment-form button[type="reset"] {background-color: transparent;border: none;color: #1FB5C7;margin-top: 10px;outline: none;}
