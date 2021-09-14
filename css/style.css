@@ -19,6 +19,9 @@ body {
   line-height: 26px;
   letter-spacing: .02em;
 }
+html {
+  overflow-y: scroll; 
+}
 img {
   max-width: 100%;
 }
